@@ -1,4 +1,6 @@
 /*
+The data comign from silver has been cleaned and loaded to silver
+
 WARNING - The data in the table will be truncated and full load will be performed
 */
 
