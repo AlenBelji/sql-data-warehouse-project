@@ -46,7 +46,7 @@ IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
 DROP TABLE  bronze.crm_sales_details
 
 GO
--- CREATE TABLE crm_prd_info IN SCHEMA bronze
+-- CREATE TABLE crm_sales_details IN SCHEMA bronze
 CREATE TABLE bronze.crm_sales_details (
 sls_ord_num	VARCHAR(20),
 sls_prd_key	VARCHAR(20),
@@ -67,7 +67,7 @@ IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
 DROP TABLE  bronze.erp_cust_az12
 
 GO
--- CREATE TABLE CRM_CUST_INFO IN SCHEMA bronze
+-- CREATE TABLE erp_cust_az12 IN SCHEMA bronze
 CREATE TABLE bronze.erp_cust_az12 (
 CID	VARCHAR(20),
 BDATE DATE,
@@ -79,7 +79,7 @@ IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
 DROP TABLE  bronze.erp_loc_a101
 
 GO
--- CREATE TABLE crm_prd_info IN SCHEMA bronze
+-- CREATE TABLE erp_loc_a101 IN SCHEMA bronze
 CREATE TABLE bronze.erp_loc_a101 (
 CID	VARCHAR(20),
 CNTRY VARCHAR(30));
@@ -90,7 +90,7 @@ IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
 DROP TABLE  bronze.erp_px_cat_g1v2
 
 GO
--- CREATE TABLE crm_prd_info IN SCHEMA bronze
+-- CREATE TABLE erp_px_cat_g1v2 IN SCHEMA bronze
 CREATE TABLE bronze.erp_px_cat_g1v2 (
 ID	VARCHAR(10),
 CAT	VARCHAR(20),
